@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Diari Nada</string>
+    <string name="description">Sebuah Buku Seri Interaktif Lagu Anak</string>
+    <string name="lyrics">Dua mata saya, hidung saya satu\nDua kaki saya, pakai sepatu baru\nDua telinga saya, yang kiri dan kanan\nSatu mulut saya, tidak berhenti makan\nSatu mulut saya, tidak berhenti makan\nSatu mulut saya, tidak berhenti makan</string>
+    <string name="song_title">Dua Mata Saya</string>
+    <string name="nav_open">Open navigation drawer</string>
+    <string name="nav_close">Close navigation drawer</string>
+    <string name="lyrics_0">Dua mata saya, hidung saya satu\nDua kaki saya, pakai sepatu baru\nDua telinga saya, yang kiri dan kanan\nSatu mulut saya, tidak berhenti makan</string>
+    <string name="lyrics_1">Kepala, pundak, lutut, kaki, lutut, kaki\nKepala, pundak, lutut, kaki, lutut, kaki\nMata, telinga, mulut, hidung, dan pipi\nKepala, pundak, lutut, kaki, lutut, kaki</string>
+    <string name="lyrics_2">Rentangkan jari tanganmu, mari kita kenali\nBermacam nama jari, yang kita miliki\nYang kecil ini kelingking, di dekatnya jari manis\nDi tengah ada jari tengah, lalu telunjuk dan ibu jari\nItu bermacam nama jari yang kita miliki\nItu bermacam nama jari yang perlu kita ketahui</string>
+    <string name="feedback_form_link">https://forms.gle/xwnFnASVZrtGXGeu6</string>
+</resources>

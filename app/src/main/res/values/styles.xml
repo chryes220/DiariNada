@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.NoActionBar.FullScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="TransparentToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/diarinadafonts</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:iconTint">@android:color/darker_gray</item>
+    </style>
+</resources>

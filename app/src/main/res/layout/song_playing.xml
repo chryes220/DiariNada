@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+        android:id="@+id/bgImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg1" />
+
+    <ImageButton
+        android:id="@+id/menuButton"
+        android:layout_width="38dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/three_lines_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/nextButton"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/next_icon"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lyrics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/diarinadafonts"
+        android:letterSpacing="0.05"
+        android:lineHeight="25dp"
+        android:radius="8dp"
+        android:text="@string/lyrics"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-109dp"
+        tools:layout_editor_absoluteY="110dp">
+
+        <ImageView
+            android:id="@+id/playerBar"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:adjustViewBounds="true"
+            android:background="@color/darkTeal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/rectangle" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/playerBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageButton
+                android:id="@+id/loopButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="15dp"
+                android:background="@drawable/loop_button_inactive"
+                android:contentDescription="exit button" />
+
+            <ImageButton
+                android:id="@+id/playButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="15dp"
+                android:background="@drawable/play_button_shadow"
+                android:contentDescription="exit button" />
+
+            <ImageButton
+                android:id="@+id/repeatButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="15dp"
+                android:background="@drawable/replay_button_shadow"
+                android:contentDescription="exit button" />
+
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="20dp"
+            android:progressBackgroundTint="@color/white"
+            android:progressTint="@color/white"
+            android:thumbTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/playerBar"
+            app:layout_constraintEnd_toEndOf="@+id/playerBar"
+            app:layout_constraintStart_toStartOf="@+id/playerBar"
+            app:layout_constraintTop_toTopOf="@+id/playerBar" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include
+        android:id="@+id/navigationView"
+        android:translationX="-300dp"
+        android:visibility="gone"
+        layout="@layout/nav_drawer_layout" />
+
+</FrameLayout>

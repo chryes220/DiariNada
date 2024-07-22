@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/beige">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/menuButton"
+                android:layout_width="38dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/three_lines_icon"
+                android:backgroundTint="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:text="DAFTAR LAGU"
+                android:textColor="@color/black"
+                android:fontFamily="@font/diarinadafonts"
+                android:letterSpacing="0.1"
+                android:textFontWeight="700"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="16sp"
+            android:layout_gravity="center_horizontal"
+            />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/navigationView"
+        android:translationX="-300dp"
+        android:visibility="gone"
+        layout="@layout/nav_drawer_layout" />
+
+</FrameLayout>
